@@ -25,7 +25,8 @@ class UnitTest(unittest.TestCase):
         self.assertFalse(Unit.is_prime(30))
 
     # OUTPUT
-        # -------------------------
+        # ...
+        # ----------------------------
         # Ran 3 tests in 0.001s
         # OK    
     
@@ -45,26 +46,16 @@ class UnitTest(unittest.TestCase):
             Unit.is_prime("six")
             Unit.is_prime(True)
 
-    # def test_valueerror(self):
-    #     with self.assertRaises(ValueError):
-    #         # Unit.is_prime(-4)
-    #         Unit.is_prime(0)
+    def test_valueerror(self):
+        with self.assertRaises(ValueError):
+            Unit.is_prime(-4)
+            Unit.is_prime(0)
+    
+    #OUTPUT
+    # ......
+    # ----------------------------
+    # Ran 6 tests in 0.001s
+    # OK
 
 if __name__=='__main__':
     unittest.main()
-
-
-#OUTPUT
-    # .....E
-    # ======================================================================
-    # ERROR: test_valueerror (__main__.UnitTest.test_valueerror)
-    # ----------------------------------------------------------------------
-    # Traceback (most recent call last):
-    # File "d:\PROGRAMMING\Python\UnitTest.py", line 44, in test_valueerror
-    #     Unit.is_prime(-4)
-    # File "d:\PROGRAMMING\Python\Unit.py", line 13, in is_prime
-    #     raise TypeError('Number should be a non-negative integer.')       
-    # TypeError: Number should be a non-negative integer.
-    # ----------------------------------------------------------------------
-    # Ran 6 tests in 0.002s
-    # FAILED (errors=1)
