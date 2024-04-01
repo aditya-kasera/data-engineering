@@ -1,7 +1,7 @@
 {
   "name": "Python Training",
   "date": "April 19, 2024",
-  "completed": True,
+  "completed": "True",
   "instructor": {
    "name": "XYZ",
    "website": "http://pqr.com/"
