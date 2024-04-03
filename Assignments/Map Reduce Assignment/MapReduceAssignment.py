@@ -22,7 +22,7 @@ def reducer(mapped_dict_list):
     return reduced_dict
 
 
-with open(r'Assignments\MapReduceFile.txt', 'r') as file:
+with open(r'Assignments\Map Reduce Assignment\MapReduceFile.txt', 'r') as file:
     
     lines = file.read().splitlines()
 
