@@ -10,7 +10,7 @@ mapped_rdd = rdd.map(lambda x: x * 2)
 print(mapped_rdd.collect())  # Output: [2, 4, 6, 8, 10]
 
 filtered_rdd = rdd.filter(lambda x: x % 2 == 0)
-print(filtered_rdd.collect())  # Output: [2, 4]
+print(filtered_rdd.collect())  # Output: [2, 4]``
 
 
 
@@ -40,6 +40,6 @@ print(filtered_rdd.collect())  # Output: [2, 4]
 # res = filtered_rdd.collect()
 # print(res)
 
-# # spark.stop()
+# spark.stop()
 
 # # print('Working')
