@@ -1,0 +1,6 @@
+Module is a single Python file that contains functions, classes, and variables. 
+A module could be a file containing a single variable, a function or a big code base.
+Module can be imported and used in other Python scripts. 
+Package is a collection of modules organized in directories or sub-packages. 
+A package contains an __init__.py file to indicate that the directory should be treated as a package.
+So, while a module is a single file, a package is a collection of modules organized in a directory structure.
